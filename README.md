@@ -336,6 +336,7 @@ plot_tree(best_,
 
 
 # Algorithm + App: 
+Next, we wanted to convert this decision tree to an interactive algorithm. To do this, we created a web application using Streamlit, which can be accessed using the link above. Once on the application, users can answer a series of questions about their personal preferences and opinions of their partner, and when they click “calculate”, the algorithm will follow the decision tree and result in a like score, which is the “value” on the decision tree. The goal of this application is to provide information about how much someone may like their partner. Of course, this like score is not entirely accurate as several other factors must be considered, but it gives us a good understanding of how our opinions and preferences in a partner can influence how much we like them! 
 
 The Link to the App! 
 https://qtm-347-project-2.onrender.com/
