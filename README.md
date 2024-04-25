@@ -22,16 +22,19 @@ Variables that end in _partner and _important refer to your rating of your partn
 
 The Dataset was originally in ARFF form and was converted to a csv file using this code: 
 
-`` #convert to csv
+```python
+ #convert to csv
 data, meta = arff.loadarff('/Users/natashagandhi/Desktop/QTM 347/speeddating.arff')
 #convert to DataFrame
 data = pd.DataFrame(data)
 file_path = '/Users/natashagandhi/Desktop/speeddating.csv'
-data.to_csv(file_path) ``
+data.to_csv(file_path)
+```
 
 After cleaning, the subset 'numerical_subset_clean' was created, containing only the numerical variables. From there, the dataset, 'rating_partner', was created and used for much of the analysis. 
 
-``rating_partner = numerical_subset_clean[['like', 
+``` python
+rating_partner = numerical_subset_clean[['like', 
                                          'importance_same_race',
                                          'd_age', 
                                          'samerace',
@@ -48,7 +51,7 @@ After cleaning, the subset 'numerical_subset_clean' was created, containing only
                                          'ambition_important', 
                                          'shared_interests_important', 
                                          'guess_prob_liked']]
-``
+```
 
 Introductory Data Analysis: 
 
