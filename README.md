@@ -101,7 +101,7 @@ In the next section, we will further explore which variables are important and i
 
 Using Random Forest and bagging, we looked at which variables were the most important using the feature importance function. We optimized our m values by plotting Train and Test MSE as M increased. First, we looked at all the variables against 'like.' 
 
-![image](https://github.com/ishana65/QTM347FINALproject/assets/122471733/b22959d7-c7b7-4407-bd10-bb154bbe668f)
+![image](https://github.com/ishana65/QTM347FINALproject/assets/122471733/464fc721-2b6e-427b-991a-eeee13a992f3)
 
 ```python
 m = best_m # the best m based on test error 
@@ -118,7 +118,7 @@ According to this graph, many of the interest variables (clubbing, tv, tvsports,
 
 We want to look at the variable 'decision_o, ' which is the partner's decision on the night of the event. We want to see which features influence your partner's decision. We've included both the variables of partners' scoring preference of the different features (how highly they value attractiveness, intelligence, etc.) and the variables that show how your partner rated you on the night of the event. 
 
-![image](https://github.com/ishana65/QTM347FINALproject/assets/122471733/c1a0837c-d8b8-4762-979a-6cf7561cb732)
+![image](https://github.com/ishana65/QTM347FINALproject/assets/122471733/32f7e004-7818-4169-afa5-848423e7f67c)
 
 ![image](https://github.com/ishana65/QTM347FINALproject/assets/122471733/ad945eab-a74a-4662-b899-611157b8841e)
 
@@ -126,7 +126,7 @@ Our top 2 features are attractive_o, which is how attractive your partner rates 
 
 Now, we want to examine 'decision', which includes features such as how you rated your partner on the night of the event and your preferences (such as how important attractiveness, sincerity, etc.). 
 
-![image](https://github.com/ishana65/QTM347FINALproject/assets/122471733/3e3523bc-da1c-4a2b-b586-c3849fa5e43c)
+![image](https://github.com/ishana65/QTM347FINALproject/assets/122471733/fb37fe96-ffb5-4645-838c-7dcf7c6e4672)
 
 ![image](https://github.com/ishana65/QTM347FINALproject/assets/122471733/96f5a91f-cff7-4281-aa69-cd6e41d64552)
 
