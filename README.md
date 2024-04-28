@@ -20,7 +20,7 @@ Variables that end in _partner and _important refer to your rating of your partn
 
 # Data Cleaning 
 
-The Dataset was originally in ARFF form and was converted to a csv file using this code: 
+The Dataset was originally in ARFF form and was converted to a CSV file using this code: 
 
 ```python
  #convert to csv
@@ -31,7 +31,7 @@ file_path = '/Users/natashagandhi/Desktop/speeddating.csv'
 data.to_csv(file_path)
 ```
 
-After cleaning, the subset 'numerical_subset_clean' was created, containing only the numerical variables. From there, the dataset, 'rating_partner', was created and used for much of the analysis. 
+After cleaning, the subset 'numerical_subset_clean', containing only the numerical variables, was created. From there, the dataset 'rating_partner' was created and used for much of the analysis. 
 
 ``` python
 rating_partner = numerical_subset_clean[['like', 
@@ -114,7 +114,7 @@ feature_imp.sort_values(by='importance', ascending=False)
 
 According to this graph, many of the interest variables (clubbing, tv, tvsports, etc.) are at the bottom of the feature importance graph. Therefore, we decided not to include these in our variables of interest in later analysis. 
 
- Furthermore, we want to discover whether similar features show up in our decision vs. our partners decision.
+Furthermore, we want to discover whether similar features show up in our decision vs. our partners decision.
 
 We want to look at the variable 'decision_o, ' which is the partner's decision on the night of the event. We want to see which features influence your partner's decision. We've included both the variables of partners' scoring preference of the different features (how highly they value attractiveness, intelligence, etc.) and the variables that show how your partner rated you on the night of the event. 
 
@@ -334,9 +334,11 @@ plot_tree(best_,
 ```
 ![image](https://github.com/ishana65/QTM347FINALproject/assets/122471733/09b7b73f-b223-4238-bd84-35e69cb4b67f)
 
+According to the pruned tree, the features that are considered important are funny_partner, attractive_partner, and shared_interest_partner. These features are included in the top splits of the tree and are therefore considered more important. Some of the other variables that were selected include intelligence_partner, guess_prob_liked, ambition_partner, funny_important, importance_same_race, sincere_partner, sincere_important,  samerace, and intelligence_important.
+
 
 # Algorithm + App: 
-Next, we wanted to convert this decision tree to an interactive algorithm. To do this, we created a web application using Streamlit, which can be accessed using the link above. Once on the application, users can answer a series of questions about their personal preferences and opinions of their partner, and when they click “calculate”, the algorithm will follow the decision tree and result in a like score, which is the “value” on the decision tree. The goal of this application is to provide information about how much someone may like their partner. Of course, this like score is not entirely accurate as several other factors must be considered, but it gives us a good understanding of how our opinions and preferences in a partner can influence how much we like them! 
+Next, we wanted to convert this decision tree to an interactive algorithm. To do this, we created a web application using Streamlit, which can be accessed using the link below. Once on the application, users can answer a series of questions about their personal preferences and opinions of their partner, and when they click “calculate”, the algorithm will follow the decision tree and result in a like score, which is the “value” on the decision tree. The goal of this application is to provide information about how much someone may like their partner. Of course, this like score is not entirely accurate as several other factors must be considered, but it gives us a good understanding of how our opinions and preferences in a partner can influence how much we like them!
 
 The Link to the App! 
 https://qtm-347-project-2.onrender.com/
