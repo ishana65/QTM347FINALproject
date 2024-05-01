@@ -336,6 +336,10 @@ plot_tree(best_,
 
 According to the pruned tree, the features that are considered important are funny_partner, attractive_partner, and shared_interest_partner. These features are included in the top splits of the tree and are therefore considered more important. Some of the other variables that were selected include intelligence_partner, guess_prob_liked, ambition_partner, funny_important, importance_same_race, sincere_partner, sincere_important,  samerace, and intelligence_important.
 
+# Model Comparison 
+
+<img width="805" alt="Screenshot 2024-05-01 at 4 21 15 PM" src="https://github.com/ishana65/QTM347FINALproject/assets/122471733/c2943571-0f96-4e07-831b-ecd8b9c33fbd">
+
 
 # Algorithm + App: 
 Next, we wanted to convert this decision tree to an interactive algorithm. To do this, we created a web application using Streamlit, which can be accessed using the link below. Once on the application, users can answer a series of questions about their personal preferences and opinions of their partner, and when they click “calculate”, the algorithm will follow the decision tree and result in a like score, which is the “value” on the decision tree. The goal of this application is to provide information about how much someone may like their partner. Of course, this like score is not entirely accurate as several other factors must be considered, but it gives us a good understanding of how our opinions and preferences in a partner can influence how much we like them!
