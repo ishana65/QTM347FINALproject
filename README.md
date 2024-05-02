@@ -347,3 +347,12 @@ Next, we wanted to convert this decision tree to an interactive algorithm. To do
 
 The Link to the App! 
 https://qtm-347-project-2.onrender.com/
+
+# References: 
+
+Friedman, J., Hastie, T., & Tibshirani, R. (2010). Regularization paths for generalized linear models via coordinate descent. Journal of Statistical Software, 33(1), 1.
+		 	 	 		
+Greitemeyer, Tobias. “What Do Men and Women Want in a Partner? Are Educated Partners Al- ways More Desirable?” Journal of Experimental Social Psychology, Academic Press, 29 Mar. 2006, www.sciencedirect.com/science/article/abs/pii/S0022103106000345. 
+
+Hastie, T., Tibshirani, R., & Wainwright, M. (2015). Statistical Learning with Sparsity: The Lasso and Generalizations. CRC Press.
+
